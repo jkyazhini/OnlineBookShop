@@ -3,11 +3,11 @@ Features:
 
 
     1.   MainPage:
-          --->   admin  
-          --->  Customer  
+            i)  admin  
+           ii)  Customer  
     2.   AdminPage:
-          --->  UserName
-          --->  UserId
+            i)  UserName
+           ii)  UserId
     3.   BookDetails: (Available)
             i)  BookName
            ii)  AuthorsName
