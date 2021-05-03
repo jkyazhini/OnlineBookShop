@@ -1,11 +1,11 @@
 # OnlineBookShop
 Features:
     1.   MainPage:
-            i)  admin  
-           ii)  Customer  
+          --->   admin  
+          --->  Customer  
     2.   AdminPage:
-            i)  UserName
-           ii)  UserId
+          --->  UserName
+          --->  UserId
     3.   BookDetails: (Available)
             i)  BookName
            ii)  AuthorsName
