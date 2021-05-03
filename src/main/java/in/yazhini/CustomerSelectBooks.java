@@ -1,12 +1,12 @@
 package in.yazhini;
 
 public class CustomerSelectBooks {
-
-	public static boolean validateBookName(String bookname) { // Only store the BookName in array
+	// Store the BookName in Array
+	public static boolean validateBookName(String bookName) {
 		String[] arrayOfbookName = { "TamilNovels", "EnglishNovels", "MathsDiscoveries", "GKIndiaAtRisk" };
 		for (int i = 0; i < arrayOfbookName.length; i++) {
 			String userName = arrayOfbookName[i];
-			if (bookname.equalsIgnoreCase(userName)) {
+			if (bookName.equalsIgnoreCase(userName)) {
 				return true;
 			} else {
 				continue;
@@ -14,9 +14,9 @@ public class CustomerSelectBooks {
 		}
 		return false;
 	}
+	// AuthorName is declare to Array
 
-	public static boolean validateAuthorName(String authorName) // AuthorName is declare to array
-	{
+	public static boolean validateAuthorName(String authorName) {
 		String[] arrayOfauthorName = { "Thiruvalluvar", "George Orwell", "Srinivasa Ramanujan", "Jaswant Singh" };
 		for (int i = 0; i < arrayOfauthorName.length; i++) {
 			String userName = arrayOfauthorName[i];
@@ -30,7 +30,8 @@ public class CustomerSelectBooks {
 
 	}
 
-	public static boolean validateBookPrice(Integer bookPrice) { // BookPrice is stored in the array
+	// BookPrice is stored in the array
+	public static boolean validateBookPrice(Integer bookPrice) {
 		Integer[] arrayOfbookPrice = { 200, 250, 300, 350 };
 		for (int i = 0; i < arrayOfbookPrice.length; i++) {
 			int userPrice = arrayOfbookPrice[i];
@@ -44,7 +45,7 @@ public class CustomerSelectBooks {
 	}
 
 	public static boolean validateNoOfBooks(Integer NoOfBooks, String BookName)
-	// no of books are stored then use some condition//
+	// No of books are stored then use some condition//
 	{
 		boolean isValid = false;
 		switch (BookName) {

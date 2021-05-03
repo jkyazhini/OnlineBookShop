@@ -1,17 +1,17 @@
 package in.yazhini;
 
 public class BookDetails {
-
+            //To declare the list in purpose of retrieve
 	@Override
 	public String toString() {
-		return "BookDetails [BookName=" + BookName + ", AuthorName=" + AuthorName + ", BookPrice=" + BookPrice
-				+ ", NoOfBooks=" + NoOfBooks + "]";
+		return " BookName=" + bookName + ", AuthorName=" + authorName + ", BookPrice=" + bookPrice
+				+ ", NoOfBooks=" + noOfBooks + " ";
 		// **Generate to string the array set of Bookdetails**//
 	}
 
-	public String BookName;
-	public String AuthorName;
-	public String BookPrice;
-	public String NoOfBooks;
+	public String bookName;
+	public String authorName;
+	public String bookPrice;
+	public String noOfBooks;
 
 }

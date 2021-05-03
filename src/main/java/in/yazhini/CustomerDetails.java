@@ -1,24 +1,24 @@
 package in.yazhini;
 
 public class CustomerDetails {
-	public static void details(String Name, long MobileNo, String Password, String Address1, String Address2,
+	public static void details(String name, long mobileNo, String password, String address1, String address2,
 			String Country) {
-		// To Check the Details is true or not
+		// To Check the Customer Details is true or not
 		{
-			if (Name.length() > 0) {
-				System.out.println("NAME:" + Name);
+			if (name.length() > 0) {
+				System.out.println("NAME:" + name);
 
-				if (MobileNo > 5999999999L) {
-					System.out.println("MOBILENO:" + MobileNo);
-					if (Password.length() <= 8) {
-						System.out.println("PASSWORD:" + Password);
+				if (mobileNo > 5999999999L) {
+					System.out.println("MOBILENO:" + mobileNo);
+					if (password.length() <= 8) {
+						System.out.println("PASSWORD:" + password);
 
-						if (Address1.length() > 0) {
-							System.out.println("ADDRESS 1:" + Address1);
+						if (address1.length() > 0) {
+							System.out.println("ADDRESS 1:" + address1);
 
-							if (Address2.length() > 0) {
+							if (address2.length() > 0) {
 
-								System.out.println("ADDRESS 2:" + Address2);
+								System.out.println("ADDRESS 2:" + address2);
 
 								System.out.println("COUNTRY:" + Country);
 

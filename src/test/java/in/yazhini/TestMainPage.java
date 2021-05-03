@@ -9,9 +9,9 @@ public class TestMainPage {
 	@Test
 	public void test() {
 		String name = "Admin";
-		String Name = "Customer";
+		String name1 = "Customer";
 		// user is admin so go to admin page
-		Mainpage.name(name, Name);
+		Mainpage.name(name, name1);
 
 	}
 }

@@ -1,6 +1,7 @@
 package in.yazhini;
 
 public class AdminPage {
+	// Stored the data in Admin use
 	public static void displayWelcome(String name, long userId) {
 		System.out.println("Welcome To AdminPage");
 		{
@@ -10,7 +11,7 @@ public class AdminPage {
 			} else {
 				System.out.println("UserName is Wrong");
 			}
-			// Display the admin page
+
 			{
 				if (userId == 8) {
 					System.out.println("UserId :" + userId);

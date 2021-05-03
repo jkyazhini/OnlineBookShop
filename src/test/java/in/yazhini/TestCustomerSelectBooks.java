@@ -10,7 +10,7 @@ public class TestCustomerSelectBooks {
 
 	@Test
 	public void testCase1() {
-		// Properly added the input
+		// Valid BookDetails from the Customer//
 		String BookName = "TamilNovels";
 		String AuthorName = "Thiruvalluvar";
 		int BookPrice = 200;
@@ -33,25 +33,26 @@ public class TestCustomerSelectBooks {
 
 	@Test
 	public void testCase2() {
-		// choice of BooksDetails is Wrong
-		String BookName = "English Novels";
-		String AuthorName = "Williams";
-		int BookPrice = 250;
-		int NoOfBooks = 5;
-		ArrayList<String> errors = SelectBooks.Validate(BookName, AuthorName, BookPrice, NoOfBooks);
+		// InValid BookDetails from the Customer//
+		String bookName = "EnglisNovels";
+		String authorName = "Williams";
+		int bookPrice = 250;
+		int noOfBooks = 5;
+		ArrayList<String> errors = SelectBooks.Validate(bookName, authorName, bookPrice, noOfBooks);
 		if (errors.isEmpty()) {
-			System.out.println("All user details are valid");
-
-			System.out.println("BOOK NAME   :" + BookName);
-			System.out.println("AUTHOR NAME :" + AuthorName);
-			System.out.println("BOOK PRICE  :" + BookPrice);
-			System.out.println("NO OF BOOKS :" + NoOfBooks);
+		    System.out.println("BOOK NAME   :" + bookName);
+			System.out.println("AUTHOR NAME :" + authorName);
+			System.out.println("BOOK PRICE  :" + bookPrice);
+			System.out.println("NO OF BOOKS :" + noOfBooks);
 
 			// SelectBooks.Validate(BookName,AuthorName,BookPrice,NoOfBooks);
 
 		} else {
+			System.out.println("User details are Invalid");
+
 			System.out.println("Errors\n" + errors);
 		}
+		assertEquals(false, errors.isEmpty());
 	}
 
 }

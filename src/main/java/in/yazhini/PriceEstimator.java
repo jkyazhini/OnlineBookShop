@@ -1,25 +1,25 @@
 package in.yazhini;
 
 public class PriceEstimator {
-	public static double BillAmount(String BookName, int NoOfBooks) {
-		double TotalAmount = 0;
-		if (NoOfBooks > 0 && NoOfBooks <= 10) {
-			switch (BookName) {
+	public static double billAmount(String bookName, int noOfBooks) {
+		double totalAmount = 0;
+		if (noOfBooks > 0 && noOfBooks <= 10) {
+			switch (bookName) {
 			// wheather check the book details
 			case "TamilNovels": {
-				TotalAmount = TamilNovels(NoOfBooks);
+				totalAmount = tamilNovels(noOfBooks);
 				break;
 			}
 			case "EnglishNovels": {
-				TotalAmount = EnglishNovels(NoOfBooks);
+				totalAmount = englishNovels(noOfBooks);
 				break;
 			}
 			case "MathematicsDiscoveries": {
-				TotalAmount = MathematicsDiscoveries(NoOfBooks);
+				totalAmount = mathematicsDiscoveries(noOfBooks);
 				break;
 			}
 			case "GKIndiaAtRisk": {
-				TotalAmount = GKIndiaAtRisk(NoOfBooks);
+				totalAmount = gkIndiaAtRisk(noOfBooks);
 				break;
 			}
 			default: {
@@ -28,42 +28,42 @@ public class PriceEstimator {
 			}
 			}
 		} else {
-			System.out.println("Enter the valid NoOfBook :");
+			System.out.println("NoOfBook is InValid :");
 		}
-		return TotalAmount;
+		return totalAmount;
 	}
 
 	// Generate a Amount.Gst,Delivery charge and Total amount in each BookDetails
-	public static double TamilNovels(int A) {
+	public static double tamilNovels(int A) {
 		double amount = (double) (A * 200);
 		double GST = (double) 7 * (amount / 100);
-		double TotalAmount = GST + amount + 50;
-		System.out.println("Total amount of TamilNovels = " + TotalAmount);
-		return TotalAmount;
+		double totalAmount = GST + amount + 50;
+		System.out.println("Total amount of TamilNovels = " + totalAmount);
+		return totalAmount;
 
 	}
 
-	public static double EnglishNovels(int B) {
+	public static double englishNovels(int B) {
 		double amount = (double) (B * 250);
 		double GST = (double) 7 * (amount / 100);
-		double TotalAmount = GST + amount + 50;
-		System.out.println("Total amount of EnglishNovels = " + TotalAmount);
-		return TotalAmount;
+		double totalAmount = GST + amount + 50;
+		System.out.println("Total amount of EnglishNovels = " + totalAmount);
+		return totalAmount;
 	}
 
-	public static double MathematicsDiscoveries(int C) {
+	public static double mathematicsDiscoveries(int C) {
 		double amount = (double) (C * 300);
 		double GST = (double) 7 * (amount / 100);
-		double TotalAmount = GST + amount + 50;
-		System.out.println("Total amount of MathematicsDiscoveries = " + TotalAmount);
-		return TotalAmount;
+		double totalAmount = GST + amount + 50;
+		System.out.println("Total amount of MathematicsDiscoveries = " + totalAmount);
+		return totalAmount;
 	}
 
-	public static double GKIndiaAtRisk(int D) {
+	public static double gkIndiaAtRisk(int D) {
 		double amount = (double) (D * 350);
 		double GST = (double) 7 * (amount / 100);
-		double TotalAmount = GST + amount + 50;
-		System.out.println("Total amount of GKIndiaAtrisk = " + TotalAmount);
-		return TotalAmount;
+		double totalAmount = GST + amount + 50;
+		System.out.println("Total amount of GKIndiaAtrisk = " + totalAmount);
+		return totalAmount;
 	}
 }
