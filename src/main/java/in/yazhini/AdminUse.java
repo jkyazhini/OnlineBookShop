@@ -6,12 +6,12 @@ public class AdminUse {
 	static ArrayList<BookDetails> userList = new ArrayList<BookDetails>();
 
 	// For purpose of Add the BookDetails to the Admin//
-	public static void addBookDetails(BookDetails user1, BookDetails user2, BookDetails user3, BookDetails user4) {
+	public static void addBookDetails(BookDetails book1, BookDetails book2, BookDetails book3, BookDetails book4) {
 
-		userList.add(user1);
-		userList.add(user2);
-		userList.add(user3);
-		userList.add(user4);
+		userList.add(book1);
+		userList.add(book2);
+		userList.add(book3);
+		userList.add(book4);
 	  
 //		 Display all user details
 //		 for (BookDetails user : userList) {
@@ -20,9 +20,9 @@ public class AdminUse {
 	}
 
 	// Count the Number of books
-	public static int noOfBooks() {
-		int noOfBooks = userList.size();
-		return noOfBooks;
+	public static int noOfBookName() {
+		int noOfBookName = userList.size();
+		return noOfBookName;
 	}
 
 	public static void displayBooks() {
