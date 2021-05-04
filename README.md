@@ -14,8 +14,7 @@ Features:
           iii)  NoOfBooks 
     4.   CustomerPage:
             i)  Name
-           ii)  Email-Id
-          iii)  Password
+           ii)  Password
     6.   CustomerSelectBooks:
              i)  BookName
             ii)  AuthorsName
