@@ -6,12 +6,12 @@ public class AdminUse {
 	static ArrayList<BookDetails> userList = new ArrayList<BookDetails>();
 
 	// For purpose of Add the BookDetails to the Admin//
-	public static void addBookDetails(BookDetails book1, BookDetails book2, BookDetails book3, BookDetails book4) {
-
-		userList.add(book1);
-		userList.add(book2);
-		userList.add(book3);
-		userList.add(book4);
+	public static void addBookDetails(BookDetails  ...books) {
+         for (BookDetails bookDetails : books) {
+             bookList.add(bookDetails);
+		}
+		
+	
 	  
 //		 Display all user details
 //		 for (BookDetails user : userList) {
