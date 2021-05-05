@@ -2,7 +2,7 @@ package in.yazhini;
 
 public class AdminPage {
 	// Stored the data in Admin use
-	public static void displayWelcome(String name, long userId) {
+	public static void displayWelcome(String name, String userId) {
 		System.out.println("Welcome To AdminPage");
 		{
 			if (name.equals("Yazhini")) {
@@ -13,7 +13,7 @@ public class AdminPage {
 			}
 
 			{
-				if (userId == 8) {
+				if (userId.length()==8) {
 					System.out.println("UserId :" + userId);
 				} else {
 					System.out.println("UserId is Wrong");
