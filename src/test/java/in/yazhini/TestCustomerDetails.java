@@ -21,9 +21,9 @@ public class TestCustomerDetails {
 	public void testCase2() {
 		// Customer Details is InValid
 		System.out.println("WELCOME TO REGISTRATION\n"); // Input of a Customer Details
-		String name = "P.Muthu Kumari";
+		String name = "P.Muthu";
 		long mobileNo = 988987876L;
-		String password = "succeeds";
+		String password = "wonderfull";
 		String address1 = "7Bahavath Singh Street";
 		String address2 = "madurai";
 		String country = "India";
